@@ -1,0 +1,25 @@
+{
+  "name": "dnskit.gs",
+  "version": "1.0.0",
+  "description": "dnskit but in appscript",
+  "main": "./build/src/index.js",
+  "repository": "https://github.com/darkblade1078/dnskit.gs",
+  "keywords": [
+    "Diplomacy and Strife",
+    "dsnkit",
+    "dns",
+    "api",
+    "Darkblade"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "pack": "browserify ./build/src/index.js -s dnskit > dnskit.js"
+  },
+  "author": "Darkblade",
+  "license": "ISC",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.83",
+    "@types/node": "^22.1.0",
+    "node-fetch": "^2.6.1"
+  }
+}
